@@ -8,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check branch
-        run: pwd && ls -l 
+        run: pwd && ls -l demo
