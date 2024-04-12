@@ -8,6 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: check branch
-        run: | 
-          git branch
-          git log 
+        run: pwd && ls -l 
