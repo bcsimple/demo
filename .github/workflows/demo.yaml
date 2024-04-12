@@ -3,10 +3,14 @@ name: this is a demo
 on: workflow_dispatch
 
 jobs:
-  example-job:
-    name: Save output
-    runs-on: ubuntu-latest
+  build:
+    services:
+      nginx:
+        # Docker Hub image
+        image: nginx:alpine
+        ports:
+          - 8080:80
     steps:
-      - shell: bash
-        run: docker info
+    - name: curl
+      run: curl localhost:8080
  
