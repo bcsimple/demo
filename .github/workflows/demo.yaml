@@ -15,5 +15,5 @@ jobs:
           - 8080:80
     steps:
     - name: curl
-      run: curl localhost:8080
+      run: sleep 2 && curl localhost:8080
  
