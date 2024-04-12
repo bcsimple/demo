@@ -8,10 +8,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - shell: bash
-        run: |
-          expr 1 + 1 > output.log
-      - name: Download a single artifact
-        uses: actions/download-artifact@v4
-        with:
-          name: output-log-file
-          path: output.log
+        run: docker info
+ 
