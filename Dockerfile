@@ -1,3 +1,3 @@
-FROM alpine:3.10
+FROM busybox:latest
 COPY ./server /server
 CMD ["/server"]
