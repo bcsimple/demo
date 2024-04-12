@@ -10,4 +10,4 @@ jobs:
       - name: checkout
         uses: actions/checkout@v4.1.2
       - name: check branch
-        run: pwd && ls -l demo
+        run: pwd && ls -l 
